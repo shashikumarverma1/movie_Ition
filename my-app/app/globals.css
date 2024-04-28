@@ -32,86 +32,181 @@ body {
   }
 }
 .CardContainer {
-
 }
-.imgCard{
+.imgCard {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-.select{
-  padding:20 ; padding-left:20px ; padding-right:20px ; margin:10px ; width:'25vw'
-}
 
-.img{
-  width:300
+.img {
+  width: 300;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.selectContainer {
+  display: flex;
+  padding: 20px;
+  margin: "auto";
+
+}
+.select {
+  padding: 20;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  width: 600px;
 }
 /* Large screens */
+.selectBox {
+  display: flex;
+  width: 100vw;
+  padding: 20px;
+  margin: auto;
+}
+.pm100 {
+  padding: 100px;
+  margin-top: -100px;
+}
+.resultFound {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: "800";
+  font-size: 40px;
+  margin-top: -80px;
+}
+.dataNotFoundContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: "100vw";
+}
+.noDataText {
+  width: "40vw";
+  text-align: center;
+  font-weight: "600";
+  font-size: 40px;
+}
 @media (min-width: 1024px) {
   .CardContainer {
- 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
     grid-gap: 20px;
-  } 
-  .imgCard{
+    margin: 20px;
+  }
+  .imgCard {
     /* width: 100; */
-    padding-top:10px; padding-left:10 ; border:'2px solid aqua' ; border-radius:20 
-    ;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: "2px solid aqua";
+    border-radius: 10px;
   }
-  .select{
-    padding:20 ; padding-left:20px ; padding-right:20px ; margin:10px ; width:'25vw'
-   
+  .select {
+    padding: 20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    width: 500px;
   }
-  .img{
-    width:300
+  .img {
+    width: 600px;
   }
-  .cardContainer{
-    display:flex ; justify-content:center ; padding:100px ; margin-top:-100px ; margin-bottom:-50px ; margin:auto
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    margin-top: -100px;
+    margin-bottom: -50px;
+    margin: auto;
+  }
+  .cardText {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
 /* Medium screens */
-@media (max-width: 1024px) and (min-width: 767px) {
+@media (max-width: 1024px) and (min-width: 770px) {
   .CardContainer {
-   
     display: grid;
     grid-template-columns: 1fr 1fr; /* Three columns with equal width */
     grid-gap: 20px;
   }
-  .imgCard{
+  .imgCard {
     /* width: 300; */
-    padding-top:10px; padding-left:10 ; border:'2px solid aqua' ; margin:25px; border-radius:20 
-    ;
+    padding-top: 10px;
+    padding-left: 10;
+    border: "2px solid aqua";
+    margin: 25px;
+    border-radius: 20;
   }
-  .select{
-    padding:20 ; padding-left:20px ; padding-right:20px ; margin:10px ; width:'25vw'
+  .select {
+    padding: 20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    width: 600px;
   }
-  .img{
-    width:300
+  .img {
+    width: 400px;
+  }
+  .cardText {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
 /* Small screens */
-@media (max-width: 767px) {
+@media (max-width: 770px) {
   .CardContainer {
-   
     display: grid;
     grid-template-columns: 1fr; /* Three columns with equal width */
     grid-gap: 20px;
-    
   }
-  .imgCard{
+  .imgCard {
     /* width: 200; */
-    padding-top:10px; padding-left:10 ; border:'2px solid aqua' ; margin:25px;  border-radius:20 
-    ;
+    padding-top: 10px;
+    padding-left: 10;
+    border: "2px solid aqua";
+    margin: 5px;
+    border-radius: 20;
   }
-  .select{
-    padding:20 ; padding-left:20px ; padding-right:20px ; margin:10px ; width:'35vw'
+  .select {
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    width: 300px;
   }
-  .img{
-    width:250
+  .img {
+    width: 500px;
+  }
+  .cardText {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
-
+@media (min-width: 1438px) {
+  .select {
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    width: 1200px;
+  }
+}
