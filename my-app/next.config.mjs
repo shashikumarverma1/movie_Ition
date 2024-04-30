@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig =  {
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'cloudactivelabs.com',
-          port: '',
-          pathname: '/account123/**',
-        },
-      ],
-    },
+  images: {
+    domains: ['m.media-amazon.com'],
+  },
   };
 
 export default nextConfig;
+// next.config.js
+
+// module.exports = {
+//   images: {
+//     domains: ['m.media-amazon.com'],
+//   },
+// };
+

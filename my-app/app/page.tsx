@@ -28,8 +28,9 @@ export default function Home() {
       <div className="CardContainer" />
       <div>
         <div className="center pm100">
-          <div className="selectBox">
+          <div className="">
             {/* country */}
+            <h1 className="selectText"> Select Country :</h1>
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
@@ -42,6 +43,7 @@ export default function Home() {
               ))}
             </select>
             {/* language */}
+            <h1 className="selectText"> Select Language :</h1>
             <select
               value={selectedLanguage}
               onChange={(e) => setSelectedLanguage(e.target.value)}
@@ -53,6 +55,7 @@ export default function Home() {
                 </option>
               ))}
             </select>
+            <h1 className="selectText"> Select Genres :</h1>
             <select
               value={Genres}
               onChange={(e) => setGenres(e.target.value)}
@@ -72,26 +75,24 @@ export default function Home() {
         {data?.length} Results Found
       </h1>
       <div
-        style={
-          {
-            /* Gap between columns */
-          }
-        }
+      
         className="CardContainer "
       >
         {data?.length ? (
           data.map((ele, index) => {
+           
             return (
               <div key={index} style={{ margin: "auto" }} className="imgCard">
                 <div>
                   <div>
                     {ele?.moviemainphotos && (
                       <Image
-                        src={require("../public/image.png")}
-                        // width={500}
-                        // height={400}
+                        src={ele?.moviemainphotos[0]}
+                        width={500}
+                        height={200}
                         className="img"
                         alt="Picture of the author"
+                        onResize={"cover"}
                       />
                     )}
                   </div>
